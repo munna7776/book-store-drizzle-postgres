@@ -1,0 +1,11 @@
+services:
+  postgres:
+    image: postgres:17.4
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: bookstore
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: book_store

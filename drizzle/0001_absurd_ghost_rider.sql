@@ -1,0 +1,1 @@
+ALTER TABLE "authors" ALTER COLUMN "password" SET DATA TYPE text;
